@@ -1,0 +1,18 @@
+# https://www.gitpod.io/docs/config-gitpod-file
+
+tasks:
+  - init: docker-compose pull
+  - command: docker-compose up
+
+github:
+  # https://www.gitpod.io/docs/prebuilds/#configure-prebuilds
+  prebuilds:
+    pullRequestsFromForks: true
+    addBadge: true
+
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
+
+image:
+  file: Dockerfile
